@@ -1,0 +1,44 @@
+.service{
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+
+    &-title{
+        font-family: $font-title;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 50px;
+        color: $dark;
+        margin-bottom: 15px;
+    }
+
+    &-text{
+        font-family: $font-main;
+        // font-size: 16px;
+        line-height: 20px;
+        color: $accent;
+        margin-bottom: 60px;
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        &-item{
+            width: 242px;
+            padding: 70px 16px 35px 16px;
+            background-color: #F6E4D7;
+            border-radius: 10px;
+
+            &-img{
+                margin-bottom: 15px;
+            }
+            &-text{
+                // width: 210px;
+                font-family: $font-main;
+                color: $dark;
+                line-height: 24px;
+            }
+        }
+    }
+}

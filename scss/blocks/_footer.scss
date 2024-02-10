@@ -1,0 +1,55 @@
+.footer-bg{
+    background-color: $footer;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0;
+
+    &__nav{
+        display: flex;
+        align-items: center;
+
+        &-items{
+            display: flex;
+
+            .footer-logo{
+                font-size: 24px;
+                font-family: $font-title;
+                font-weight: 700;
+            }
+
+            &_item{
+                font-family: $font-main;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                margin-right: 40px;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__contacts-items{
+        display: flex;
+        flex-direction: column;
+
+        &_item{
+            font-family: $font-main;
+            font-size: 14px;
+            line-height: 24px;
+
+            a{
+                color: $white;
+                margin-left: 16px;
+            }
+
+            &:first-child{
+                margin-bottom: 13px;
+            }
+        }
+
+    }
+}

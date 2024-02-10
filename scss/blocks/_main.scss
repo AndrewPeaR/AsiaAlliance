@@ -1,6 +1,6 @@
 .main {
     display: flex;
-
+    padding-bottom: 225px;
     .main__content{
         display: flex;
         flex-direction: column;
@@ -27,7 +27,9 @@
         }
 
         &-buttons{
-            
+            .btn {
+                margin-right: 18px;
+            }
         }
     }
 }

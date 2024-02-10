@@ -1,0 +1,18 @@
+.underfooter-bg{
+    background: var(--background-gradient-1, linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%));
+}
+
+.underfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+
+    h3, address{
+        font-family: $font-main;
+        font-size: 16px;
+        font-weight: 700;
+        color: $white;
+        line-height: 24px;
+    }
+}

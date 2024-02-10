@@ -7,12 +7,24 @@
 
 .btn {
     border-radius: 37px;
-    padding: 10px 36px;
-    background-color: $button;
-    color: $white !important;
+    padding: 15px 36px;
     font-family: $font-main;
     font-size: 14px;
     font-weight: 700;
     line-height: 28px;
-    letter-spacing: 0.2px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    
+    
+    &-active{
+        background-color: $button;
+        color: $white;
+    }
+
+    &-accent-learnMore{
+        padding: 15px 33px;
+        border: 1px solid $button;
+        color: $button;
+    }
 }
