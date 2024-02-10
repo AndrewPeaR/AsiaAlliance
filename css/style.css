@@ -114,7 +114,7 @@ legend {
 
 .background {
   width: 100%;
-  background-image: url("../../img/cover.png");
+  background-image: url("../img/cover.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
