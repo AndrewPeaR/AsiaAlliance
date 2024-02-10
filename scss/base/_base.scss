@@ -1,2 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap');
 
+.wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 37px;
+    padding: 10px 36px;
+    background-color: $button;
+    color: $white !important;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}

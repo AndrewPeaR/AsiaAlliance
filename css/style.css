@@ -15,6 +15,7 @@
 /* Links */
 a, a:link, a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -84,4 +85,107 @@ label {
 
 legend {
   display: block;
+}
+
+.wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 37px;
+  padding: 10px 36px;
+  background-color: #007BA3;
+  color: #fff !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.background {
+  width: 100%;
+  background-image: url("../../img/cover.png");
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  margin-bottom: 120px;
+}
+.header__logo a {
+  font-family: "Martel", serif;
+  color: #252B42;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.header__nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav-items li {
+  margin-left: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #737373;
+  letter-spacing: 0.2px;
+}
+
+.change-lang {
+  position: relative;
+  padding-right: 8px;
+}
+.change-lang::after {
+  border-color: #737373;
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  content: "";
+  height: 6px;
+  position: absolute;
+  width: 6px;
+  margin-left: 4px;
+  margin-top: -3px;
+  top: 50%;
+  transition: all 0.1s ease-in-out;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.change-lang:hover::after {
+  margin-top: -1px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.main {
+  display: flex;
+}
+.main .main__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.main .main__content-title {
+  font-family: "Martel", serif;
+  color: #252B42;
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  line-height: 65px;
+  margin-bottom: 35px;
+}
+.main .main__content-text {
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+  margin-bottom: 35px;
 }/*# sourceMappingURL=style.css.map */
