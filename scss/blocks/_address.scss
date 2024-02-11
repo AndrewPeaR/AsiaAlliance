@@ -1,0 +1,28 @@
+.address-bg{
+    background-color: #FAFAFA;
+}
+
+.address{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h4{
+        font-size: 32px;
+        font-family: $font-title;
+        line-height: 65px;
+        color: #000;
+        font-weight: 900;
+    }
+    p{
+        font-size: 24px;
+        line-height: 33px;
+        font-family: $font-main;
+        color: $accent;
+        margin-bottom: 10px;
+    }
+
+    .maps{
+        width: 100%;
+        height: 350px;
+        border: 1px solid black;
+    }
+}

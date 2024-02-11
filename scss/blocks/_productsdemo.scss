@@ -16,10 +16,10 @@
         font-family: $font-main;
         line-height: 20px;
         color: $accent;
-        margin-bottom: 60px;
     }
 
     &__cards{
+        margin-top: 60px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 80px;

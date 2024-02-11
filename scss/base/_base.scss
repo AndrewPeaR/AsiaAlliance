@@ -34,3 +34,23 @@
         color: $button;
     }
 }
+
+.section-title{
+    font-family: $font-title;
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 65px;
+    color: $dark;
+
+    display: flex;
+    align-items: center;
+
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 4px;
+        background-color: $dark;
+        margin-right: 20px;
+    }
+}
