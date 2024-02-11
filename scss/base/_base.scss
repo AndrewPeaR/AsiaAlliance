@@ -7,7 +7,7 @@
 
 .btn {
     border-radius: 37px;
-    padding: 15px 36px;
+    padding: 15px 0;
     font-family: $font-main;
     font-size: 14px;
     font-weight: 700;
@@ -23,7 +23,13 @@
     }
 
     &-accent-learnMore{
-        padding: 15px 33px;
+        padding: 15px 0;
+        border: 1px solid $button;
+        color: $button;
+    }
+
+    &-accent-askForAPrice{
+        padding: 10px 0;
         border: 1px solid $button;
         color: $button;
     }

@@ -1,0 +1,44 @@
+.advantages-bg{
+    background-color: #F3F3F3;
+}
+
+.advantages{
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 80px;
+
+    &-title{
+        font-family: $font-title;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 50px;
+        color: $dark;
+        margin-bottom: 15px;
+    }
+
+    &-text{
+        font-family: $font-main;
+        line-height: 20px;
+        color: $accent;
+        margin-bottom: 60px;
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        
+        &-item{
+            width: 327px;
+            padding: 30px 35px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #dedede;
+
+            p{
+                font-family: $font-main;
+                color: $dark;
+                line-height: 24px;
+            }
+        }
+    }
+}

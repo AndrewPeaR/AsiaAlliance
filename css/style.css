@@ -93,7 +93,7 @@ legend {
 
 .btn {
   border-radius: 37px;
-  padding: 15px 36px;
+  padding: 15px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -107,7 +107,12 @@ legend {
   color: #fff;
 }
 .btn-accent-learnMore {
-  padding: 15px 33px;
+  padding: 15px 0;
+  border: 1px solid #007BA3;
+  color: #007BA3;
+}
+.btn-accent-askForAPrice {
+  padding: 10px 0;
   border: 1px solid #007BA3;
   color: #007BA3;
 }
@@ -242,6 +247,101 @@ legend {
   font-family: "Open Sans", sans-serif;
   color: #252B42;
   line-height: 24px;
+}
+
+.advantages-bg {
+  background-color: #F3F3F3;
+}
+
+.advantages {
+  padding-top: 80px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.advantages-title {
+  font-family: "Martel", serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #252B42;
+  margin-bottom: 15px;
+}
+.advantages-text {
+  font-family: "Open Sans", sans-serif;
+  line-height: 20px;
+  color: #737373;
+  margin-bottom: 60px;
+}
+.advantages__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__cards-item {
+  width: 327px;
+  padding: 30px 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+}
+.advantages__cards-item p {
+  font-family: "Open Sans", sans-serif;
+  color: #252B42;
+  line-height: 24px;
+}
+
+.productsdemo {
+  padding-top: 80px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.productsdemo-title {
+  font-family: "Martel", serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #252B42;
+  margin-bottom: 15px;
+}
+.productsdemo-text {
+  font-family: "Open Sans", sans-serif;
+  line-height: 20px;
+  color: #737373;
+  margin-bottom: 60px;
+}
+.productsdemo__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.productsdemo__cards-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 327px;
+  height: 590px;
+  padding: 30px 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+}
+.productsdemo__cards-item__title {
+  text-align: justify;
+  color: #252B42;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+.productsdemo__cards-item__text {
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.productsdemo__cards-item a {
+  margin: 0 auto;
 }
 
 .footer-bg {
