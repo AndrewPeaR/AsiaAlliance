@@ -1,0 +1,28 @@
+.contacts{
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    &__texts{
+        margin-bottom: 80px;
+
+        &-callToAction{
+            color: $dark;
+            font-family: $font-title;
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 65px;
+        }
+
+        &-contact{
+            color: #000;
+            font-family: $font-main;
+            font-size: 24px;
+            font-weight: 400;
+            // line-height: 65px;
+            &:last-child{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

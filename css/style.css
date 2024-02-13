@@ -434,6 +434,29 @@ legend {
   grid-column-start: 3;
 }
 
+.contacts h2 {
+  margin-bottom: 40px;
+}
+.contacts__texts {
+  margin-bottom: 80px;
+}
+.contacts__texts-callToAction {
+  color: #252B42;
+  font-family: "Martel", serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 65px;
+}
+.contacts__texts-contact {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.contacts__texts-contact:last-child {
+  margin-bottom: 50px;
+}
+
 .footer-bg {
   background-color: #033857;
 }
