@@ -33,6 +33,12 @@
         border: 1px solid $button;
         color: $button;
     }
+
+    @media (max-width: 780px) {
+        width: 100px;
+        font-size: 12px;
+        padding: 5px 0;
+    }
 }
 
 .section-title{
