@@ -25,4 +25,39 @@
         height: 350px;
         border: 1px solid black;
     }
+
+    @media (max-width: 1100px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 40px;
+        
+        h2{
+            margin-bottom: 10px;
+        }
+        h4{
+            font-size: 20px;
+            line-height: 24px;
+        }
+        
+        p{
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width: 520px) {
+        h4{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        
+        p{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
 }

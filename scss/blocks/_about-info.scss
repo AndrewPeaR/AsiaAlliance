@@ -9,4 +9,25 @@
         font-size: 20px;
         line-height: 30px;
     }
+
+    @media (max-width: 1100px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+        
+        p{
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        p{
+            font-size: 14px;
+        }
+    }
 }

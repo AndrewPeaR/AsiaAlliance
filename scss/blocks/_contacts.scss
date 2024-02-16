@@ -11,7 +11,7 @@
             font-family: $font-title;
             font-size: 32px;
             font-weight: 900;
-            line-height: 65px;
+            // line-height: 65px;
         }
 
         &-contact{
@@ -22,6 +22,56 @@
             // line-height: 65px;
             &:last-child{
                 margin-bottom: 50px;
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 960px) {
+        &__texts{
+            &-callToAction{
+                font-size: 28px;
+                line-height: 36px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            &-contact{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+    
+    @media (max-width: 520px) {
+        h2{
+            margin-bottom: 20px;
+        }
+        &__texts{
+            &-callToAction{
+                font-size: 24px;
+                line-height: 32px;
+            }
+            &-contact{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        &__texts{
+            &-callToAction{
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &-contact{
+                font-size: 14px;
+                line-height: 22px;
             }
         }
     }

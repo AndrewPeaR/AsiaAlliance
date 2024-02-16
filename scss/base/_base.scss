@@ -59,4 +59,21 @@
         background-color: $dark;
         margin-right: 20px;
     }
+
+    @media (max-width: 768px) {
+            font-size: 48px;
+            line-height: 50px;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 36px;
+
+        &::before{
+            width: 50px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        font-size: 24px;
+    }
 }
