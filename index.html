@@ -10,10 +10,11 @@
   <body>
     <div class="background">
       <div class="wrapper">
-        <!-- <header class="header">
+        <header class="header">
           <div class="header__logo">
             <a href="#">Asia Alliance</a>
           </div>
+          <!-- <input type="checkbox" id=""> -->
           <nav class="header__nav">
             <ul class="header__nav-items">
               <li class="header__nav-item change-lang"><a href="#">EN</a></li>
@@ -23,7 +24,12 @@
               <li class="header__nav-item"><a href="#">Contacts</a></li>
             </ul>
           </nav>
-        </header> -->
+
+          <!-- Icon for mobile nav -->
+          <div class="burger">
+            <span></span>
+          </div>
+        </header>
 
         <main class="main">
           <div class="main__content">
@@ -235,6 +241,13 @@
           </div>
         </div>
       </div>
-    </footer> 
+    </footer>
+    
+    <script>
+        document.querySelector('.burger').addEventListener('click', function(){
+          this.classList.toggle('active');
+          document.querySelector('.header__nav-items').classList.toggle('open');
+        })
+    </script>
   </body>
 </html>

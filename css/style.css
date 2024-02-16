@@ -91,6 +91,10 @@ legend {
   margin: 0 auto;
 }
 
+.open {
+  display: flex !important;
+}
+
 .btn {
   border-radius: 37px;
   padding: 15px 0;
@@ -224,17 +228,101 @@ legend {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+@media (max-width: 620px) {
+  .change-lang::after {
+    border-color: #fff;
+  }
+}
 .change-lang:hover::after {
   margin-top: -1px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
 
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+.burger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #737373;
+}
+.burger::before, .burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #737373;
+  transition: all 0.3s ease 0s;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger.active span {
+  transform: scale(0);
+}
+.burger.active::before {
+  background-color: #fff;
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.burger.active::after {
+  background-color: #fff;
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (max-width: 620px) {
+  .burger {
+    display: flex;
+  }
+  .header__nav-items {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 50px;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #007BA3;
+    animation: burgerAnimation 0.4s;
+  }
+  .header__nav-items li {
+    margin-bottom: 20px;
+  }
+  .header__nav-items li a {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .main {
-  padding-top: 80px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
-  padding-bottom: 225px;
+  padding-bottom: 100px;
 }
 .main .main__content {
   display: flex;
@@ -274,6 +362,7 @@ legend {
 }
 @media (max-width: 990px) {
   .main {
+    margin-top: 40px;
     padding-bottom: 125px;
   }
   .main .main__content-title {
@@ -286,8 +375,9 @@ legend {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 610px) {
+@media (max-width: 620px) {
   .main {
+    margin-top: 30px;
     padding-bottom: 75px;
   }
   .main .main__picture {
