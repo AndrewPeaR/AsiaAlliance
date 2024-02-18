@@ -129,7 +129,7 @@ legend {
 }
 
 .section-title {
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 58px;
   font-weight: 900;
   line-height: 65px;
@@ -180,7 +180,7 @@ legend {
   margin-bottom: 80px;
 }
 .header__logo a {
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   color: #252B42;
   font-size: 24px;
   font-weight: 700;
@@ -207,6 +207,17 @@ legend {
 }
 .header__nav-items li a {
   color: #737373;
+}
+
+.change_langSEL {
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.change_langSEL option {
+  font-weight: 600;
 }
 
 .change-lang {
@@ -282,7 +293,7 @@ legend {
   transform: rotate(45deg) translate(0, 50%);
 }
 
-@media (max-width: 620px) {
+@media (max-width: 680px) {
   .burger {
     display: flex;
   }
@@ -309,6 +320,16 @@ legend {
     font-size: 20px;
     color: #fff;
   }
+  .change_langSEL {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .change_langSEL option {
+    background-color: #252B42;
+    font-size: 16px;
+  }
 }
 @keyframes burgerAnimation {
   from {
@@ -323,6 +344,7 @@ legend {
   display: flex;
   align-items: center;
   padding-bottom: 100px;
+  justify-content: space-between;
 }
 .main .main__content {
   display: flex;
@@ -330,7 +352,7 @@ legend {
   max-width: 600px;
 }
 .main .main__content-title {
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   color: #252B42;
   font-size: 58px;
   font-weight: 900;
@@ -403,7 +425,7 @@ legend {
   margin-bottom: 80px;
 }
 .service-title {
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: 900;
   line-height: 50px;
@@ -414,7 +436,7 @@ legend {
   font-family: "Open Sans", sans-serif;
   line-height: 20px;
   color: #737373;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .service__cards {
   display: flex;
@@ -474,7 +496,7 @@ legend {
   padding-bottom: 80px;
 }
 .advantages-title {
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: 900;
   line-height: 50px;
@@ -485,7 +507,7 @@ legend {
   font-family: "Open Sans", sans-serif;
   line-height: 20px;
   color: #737373;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .advantages__cards {
   display: flex;
@@ -543,7 +565,7 @@ legend {
   padding-bottom: 80px;
 }
 .productsdemo-title {
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: 900;
   line-height: 50px;
@@ -556,7 +578,7 @@ legend {
   color: #737373;
 }
 .productsdemo__cards {
-  margin-top: 60px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
@@ -701,7 +723,7 @@ legend {
 }
 .address h4 {
   font-size: 32px;
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 65px;
   color: #000;
   font-weight: 900;
@@ -753,7 +775,7 @@ legend {
 }
 
 .partners h2 {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .partners .partners__cards {
   display: grid;
@@ -809,6 +831,9 @@ legend {
   }
 }
 @media (max-width: 540px) {
+  .partners h2 {
+    margin-bottom: 20px;
+  }
   .partners .partners__cards .partners__cards-item {
     max-width: 150px;
   }
@@ -832,13 +857,14 @@ legend {
   margin-bottom: 80px;
 }
 .contacts__texts-callToAction {
-  color: #252B42;
-  font-family: "Martel", serif;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
   font-size: 32px;
   font-weight: 900;
+  line-height: 65px;
 }
 .contacts__texts-contact {
-  color: #000;
+  color: #737373;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -909,7 +935,7 @@ legend {
 }
 .footer__nav-items .footer-logo {
   font-size: 24px;
-  font-family: "Martel", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 .footer__nav-items_item {

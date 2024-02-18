@@ -7,15 +7,16 @@
         margin-bottom: 80px;
 
         &-callToAction{
-            color: $dark;
+            // color: $dark;
+            color: #000;
             font-family: $font-title;
             font-size: 32px;
             font-weight: 900;
-            // line-height: 65px;
+            line-height: 65px;
         }
 
         &-contact{
-            color: #000;
+            color: $accent;
             font-family: $font-main;
             font-size: 24px;
             font-weight: 400;

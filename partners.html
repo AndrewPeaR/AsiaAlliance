@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asia Alliance</title>
     <!-- Подключение стилей -->
+    <link type="image/x-icon" href="/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -13,13 +14,17 @@
         <div class="header__logo">
           <a href="index.html">Asia Alliance</a>
         </div>
-        <!-- <input type="checkbox" id=""> -->
         <nav class="header__nav">
           <ul class="header__nav-items">
-            <li class="header__nav-item change-lang"><a href="#">EN</a></li>
+            <select class="change_langSEL">
+              <option value="en" selected>EN</option>
+              <option value="ru">RU</option>
+              <option value="ch">CH</option>
+            </select>
+            <li class="header__nav-item"><a href="index.html">Home</a></li>
             <li class="header__nav-item"><a href="about.html">About us</a></li>
             <li class="header__nav-item"><a href="products.html">Products</a></li>
-            <li class="header__nav-item"><a href="partners.html">Parthers</a></li>
+            <li class="header__nav-item"><a href="partners.html">Partners</a></li>
             <li class="header__nav-item"><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
@@ -141,5 +146,7 @@
         document.querySelector('.header__nav-items').classList.toggle('open');
       })
   </script>
+  <script src="js/lang.js"></script>
+  <script src="js/changeLang.js"></script>
   </body>
 </html>

@@ -16,6 +16,17 @@
   }
 }
 
+.change_langSEL {
+  color: $accent;
+  font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    option{
+      font-weight: 600;
+    }
+}
+
 .change-lang {
   position: relative;
   padding-right: 8px;
@@ -104,7 +115,7 @@
 
 }
 
-@media (max-width: 620px) {
+@media (max-width: 680px) {
     .burger{
         display: flex;
     }
@@ -128,6 +139,16 @@
                 color: $white;
             }
         }
+    }
+    .change_langSEL{
+      padding-left: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: $white;
+      option{
+        background-color: $dark;
+        font-size: 16px;
+      }
     }
 }
 

@@ -1,6 +1,6 @@
 .partners {
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .partners__cards {
@@ -66,6 +66,9 @@
   }
 
   @media (max-width: 540px) {
+    h2 {
+      margin-bottom: 20px;
+    }
     .partners__cards{
       .partners__cards-item{
         max-width: 150px;
