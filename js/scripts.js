@@ -11,6 +11,7 @@ const langButton = document.querySelectorAll("[data-lang]")
 const currentPathname = window.location.pathname
 let currentTextObject = {}
 
+console.log("Pathname", currentPathname)
 function checkPagePathname() {
     switch (currentPathname) {
         case '/index.html':
