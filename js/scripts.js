@@ -8,26 +8,35 @@ select.value = localStorage.getItem('language') || checkBrowserLang() || 'en'
 
 const langButton = document.querySelectorAll("[data-lang]")
 
-// const currentPathname = window.location.pathname
+const currentPathname = window.location.pathname
 // const currentPathname = location.pathname.match(/[^/]*$/)[0]
-const currentPathname = location.pathname.split('/')[location.pathname.split('/').length - 1]
+// const currentPathname = location.pathname.split('/')[location.pathname.split('/').length - 1]
 let currentTextObject = {}
 
 // console.log("Pathname win", window.location.pathname)
 // console.log("Pathname loc", location.pathname)
 console.log("Pathname", currentPathname)
 function checkPagePathname() {
-    switch (currentPathname) {
-        case 'index.html':
-            currentTextObject = someObj
-            break
-        case 'about.html':
-            currentTextObject = anotherObj
-            break
-        default:
-            currentTextObject = {}
-            break
+    // switch (currentPathname) {
+    //     case currentPathname.includes('/index.html'):
+    //         currentTextObject = someObj
+    //         break
+    //     case currentPathname.includes('/about.html'):
+    //         currentTextObject = anotherObj
+    //         break
+    //     default:
+    //         currentTextObject = {}
+    //         break
+    // }
+    if(currentPathname.includes('/index.html')){
+        currentTextObject = someObj
+        return null
     }
+    if(currentPathname.includes('/about.html')){
+        currentTextObject = anotherObj
+        return null
+    }
+    currentTextObject = {}
     // console.log(currentPathname)
 }
 checkPagePathname()
