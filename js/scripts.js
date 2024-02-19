@@ -9,9 +9,12 @@ select.value = localStorage.getItem('language') || checkBrowserLang() || 'en'
 const langButton = document.querySelectorAll("[data-lang]")
 
 // const currentPathname = window.location.pathname
-const currentPathname = location.pathname.match(/[^/]*$/)[0]
+// const currentPathname = location.pathname.match(/[^/]*$/)[0]
+const currentPathname = location.pathname.split('/')[location.pathname.split('/').length - 1]
 let currentTextObject = {}
 
+// console.log("Pathname win", window.location.pathname)
+// console.log("Pathname loc", location.pathname)
 console.log("Pathname", currentPathname)
 function checkPagePathname() {
     switch (currentPathname) {
