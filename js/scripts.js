@@ -33,6 +33,7 @@ function changeLanguage() {
         if(elem)
             elem.innerHTML = currentTextObject[key][currentLang]
     }
+    // location.reload()
 }
 changeLanguage()
 
@@ -40,4 +41,5 @@ select.addEventListener('change', (event) =>{
     currentLang = select.value
     localStorage.setItem('language', select.value)
     changeLanguage()
+    location.reload()
 })
