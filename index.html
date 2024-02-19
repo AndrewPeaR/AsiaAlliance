@@ -245,11 +245,12 @@
     <script>
         document.querySelector('.burger').addEventListener('click', function(){
           this.classList.toggle('active');
-          document.querySelector('.header__nav-items').classList.toggle('open');
+          document.querySelector('.header__nav-items').classList.toggle('open')
+          // Блокировка скролла при открытом бургер меню
+          document.querySelector('body').classList.toggle('block-scroll')
         })
     </script>
     <script src="js/lang.js"></script>
     <script src="js/scripts.js"></script>
-    <!-- <script src="js/changeLang.js"></script> -->
   </body>
 </html>

@@ -31,7 +31,7 @@ const anotherObj = {
     },
 }
 
-const langArr = {
+const indexPage = {
     ".main__content-title" : {
         "ru" : 'Надежные решения для вашей ИТ-инфраструктуры',
         "en" : 'Reliable solutions for your IT infrastructure',
