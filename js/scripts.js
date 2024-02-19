@@ -8,16 +8,17 @@ select.value = localStorage.getItem('language') || checkBrowserLang() || 'en'
 
 const langButton = document.querySelectorAll("[data-lang]")
 
-const currentPathname = window.location.pathname
+// const currentPathname = window.location.pathname
+const currentPathname = location.pathname.match(/[^/]*$/)[0]
 let currentTextObject = {}
 
 console.log("Pathname", currentPathname)
 function checkPagePathname() {
     switch (currentPathname) {
-        case '/index.html':
+        case 'index.html':
             currentTextObject = someObj
             break
-        case '/about.html':
+        case 'about.html':
             currentTextObject = anotherObj
             break
         default:
@@ -38,7 +39,7 @@ function changeLanguage() {
 }
 changeLanguage()
 
-select.addEventListener('change', (event) =>{
+select.addEventListener('change', () =>{
     currentLang = select.value
     localStorage.setItem('language', select.value)
     changeLanguage()
