@@ -18,9 +18,9 @@
           <nav class="header__nav">
             <ul class="header__nav-items">
               <select class="change_langSEL">
-                <option value="en" selected>EN</option>
-                <option value="ru">RU</option>
-                <option value="ch">CH</option>
+                <option data-lang="en" value="en" selected>EN</option>
+                <option data-lang="ru-RU" value="ru-RU">RU</option>
+                <option data-lang="ch" value="ch">CH</option>
               </select>
               <li class="header__nav-item"><a href="index.html">Home</a></li>
               <li class="header__nav-item"><a href="about.html">About us</a></li>
@@ -38,15 +38,15 @@
 
         <main class="main">
           <div class="main__content">
-            <h1 class="main__content-title lng-main__content-title">
+            <h1 class="main__content-title">
               Reliable solutions for your IT infrastructure
             </h1>
-            <p class="main__content-text lng-main__content-text">
+            <p class="main__content-text">
               Asia Alliance - your reliable partner<br />in the world of IT
               technologies
             </p>
             <div class="main__content-buttons">
-              <a href="products.html" class="btn btn-active">Products</a>
+              <a href="products.html" class="btn btn-active btn-active-product">Products</a>
               <a href="contacts.html" class="btn btn-accent-learnMore">Learn more</a>
             </div>
           </div>
@@ -70,7 +70,7 @@
                 src="./img/wrench.svg"
                 alt="wrench"
               />
-              <p class="service__cards-item-text">
+              <p class="service__cards-item-text service__cards-item-text-warranty">
                 Warranty service of<br />IT equipment
               </p>
             </div>
@@ -80,7 +80,7 @@
                 src="./img/call.svg"
                 alt="call"
               />
-              <p class="service__cards-item-text">
+              <p class="service__cards-item-text service__cards-item-support">
                 Customer service support (Call center 24/7, field service,
                 engineers)
               </p>
@@ -91,7 +91,7 @@
                 src="./img/up.svg"
                 alt="up"
               />
-              <p class="service__cards-item-text">
+              <p class="service__cards-item-text service__cards-item-text-startup">
                 Start-up and adjustment of equipment of any complexity
               </p>
             </div>
@@ -101,7 +101,7 @@
                 src="./img/laptop.svg"
                 alt="laptop"
               />
-              <p class="service__cards-item-text">
+              <p class="service__cards-item-text service__cards-item-text-equip">
                 Presale of IT solutions on specialized equipment
               </p>
             </div>
@@ -119,17 +119,17 @@
           </p>
           <div class="advantages__cards">
             <div class="advantages__cards-item">
-              <p>
+              <p class="advantages__cards-item-experience">
                 We have many years of experience in IT and work with major suppliers, which allows us to provide high quality equipment and services.
               </p>
             </div>
-            <div class="advantages__cards-item">
-              <p>
+            <div class="advantages__cards-item ">
+              <p class="advantages__cards-item-personalized">
                 We understand that every business has unique needs, so we offer a personalized approach to each client, helping to find the best solutions for their tasks.
               </p>
             </div>
             <div class="advantages__cards-item">
-              <p>
+              <p class="advantages__cards-item-offer">
                 We offer competitive pricing on equipment and services, allowing our customers to save their budgets.
               </p>
             </div>
@@ -155,7 +155,7 @@
                 src="./img/huawei1.png"
                 alt="huawei server"
               />
-              <p class="productsdemo__cards-item__text">
+              <p class="productsdemo__cards-item__text productsdemo__cards-item__text-huaweidemo">
                 Huawei FusionServer X8000 servers are high-performance devices
                 that were developed for campus networks and data centers based
                 on the latest IntelВ® HeopB® system multi-core processor
@@ -165,17 +165,17 @@
             </div>
             <div class="productsdemo__cards-item">
               <h3 class="productsdemo__cards-item__title">
-                IBM System x3100 M5
+                IBM System x3650 M5
               </h3>
               <img
                 class="productsdemo__cards-item__img"
-                src="./img/ibm1.png"
+                src="./img/ibm1.jpg"
                 alt="ibm server"
               />
-              <p class="productsdemo__cards-item__text">
-                IBM System x3100 M5 5457F3U/ Intel Xeon Processor E3-1271 v3 4C / 3.6GHz, 1/1, 8MB, 4GB/32GB/DDR3, 8TB, 2.5 " SAS, 5U Tower, 4(3) x 10(9)
+              <p class="productsdemo__cards-item__text productsdemo__cards-item__text-ibmdemo">
+                The IBM Lenovo System x3650 M5 fulfills the requirements for reliable and efficient enterprise data processing, reduces latency metrics, optimizes system performance, and supports flexible storage configurations.
               </p>
-              <a href="contacts.html" class="btn btn-accent-askForAPrice">Ask for price</a>
+              <a href="contacts.html" class="btn btn-accent-askForAPrice btn-accent-askForAPrice2">Ask for price</a>
             </div>
             <div class="productsdemo__cards-item">
               <h3 class="productsdemo__cards-item__title">
@@ -186,13 +186,13 @@
                 src="./img/juniper1.png"
                 alt="huawei server"
               />
-              <p class="productsdemo__cards-item__text">
+              <p class="productsdemo__cards-item__text productsdemo__cards-item__text-juniperdemo">
                 The MX104 offers 80Gbps throughput, a redundant control plane for high availability, and four fixed 10GbE ports and four Modular Interface Card (MIC) slots for flexible network connectivity and virtualized network services.
               </p>
-              <a href="contacts.html" class="btn btn-accent-askForAPrice">Ask for price</a>
+              <a href="contacts.html" class="btn btn-accent-askForAPrice btn-accent-askForAPrice3">Ask for price</a>
             </div>
           </div>
-          <a href="contacts.html" class="btn btn-active">Learn more</a>
+          <a href="contacts.html" class="btn btn-active btn-accent-learnMore2">Learn more</a>
         </div>
       </div>
     </section>
@@ -249,6 +249,7 @@
         })
     </script>
     <script src="js/lang.js"></script>
-    <script src="js/changeLang.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/changeLang.js"></script> -->
   </body>
 </html>

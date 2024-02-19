@@ -32,4 +32,4 @@ function changeLanguage() {
     }
 }
 
-changeLanguage()
+// changeLanguage()
