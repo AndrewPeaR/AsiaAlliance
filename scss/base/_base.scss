@@ -14,20 +14,22 @@
 }
 
 .btn {
+    display: block;
     border-radius: 37px;
     padding: 15px 0;
     font-family: $font-main;
     font-size: 14px;
     font-weight: 700;
-    line-height: 28px;
     display: inline-block;
     width: 150px;
     text-align: center;
     
-    
     &-active{
         background-color: $button;
         color: $white;
+        &-product{
+            margin-right: 18px;
+        }
     }
 
     &-accent-learnMore{
@@ -37,7 +39,7 @@
     }
 
     &-accent-askForAPrice{
-        padding: 10px 0;
+        padding: 12px 0;
         border: 1px solid $button;
         color: $button;
     }

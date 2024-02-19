@@ -15,17 +15,17 @@ const indexPage = {
         "ch": "产品"
     },
     ".btn-accent-askForAPrice" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice2" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice3" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
@@ -249,17 +249,17 @@ const aboutPage = {
         "ch": "产品"
     },
     ".btn-accent-askForAPrice" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice2" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice3" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
@@ -362,17 +362,17 @@ const productsPage = {
         "ch": "MX104 提供 80Gbps 吞吐量、用于高可用性的冗余控制平面、4 个固定 10GbE 端口和 4 个模块化接口卡 (MIC) 插槽，用于灵活的网络连接和虚拟化网络服务。"
     },
     ".btn-accent-askForAPrice" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice2" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice3" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
@@ -382,17 +382,17 @@ const productsPage = {
         "ch": "了解更多"
     },
     ".btn-accent-askForAPrice4" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice5" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice6" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
@@ -402,17 +402,17 @@ const productsPage = {
         "ch": "了解更多"
     },
     ".btn-accent-askForAPrice7" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice8" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
     ".btn-accent-askForAPrice9" : {
-        "ru": "Спросить о цене",
+        "ru": "Спросить<br />о цене",
         "en": "Ask for price",
         "ch": "询问价格"
     },
