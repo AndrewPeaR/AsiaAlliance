@@ -1,11 +1,11 @@
 const someObj = {
     ".main__content-title" : {
-        "ru-RU" : 'Надежные решения для вашей ИТ-инфраструктуры',
+        "ru" : 'Надежные решения для вашей ИТ-инфраструктуры',
         "en" : 'Reliable solutions for your IT infrastructure',
         "ch" : '为您的 IT 基础设施提供可靠的解决方案'
     },
     ".main__content-text" : {
-        "ru-RU" : "Asia Alliance - ваш надежный партнер<br />в мире IT-технологий",
+        "ru" : "Asia Alliance - ваш надежный партнер<br />в мире IT-технологий",
         "en" : "Asia Alliance - your reliable partner<br />in the world of IT technologies",
         "ch" : "亚洲联盟 - 您在 IT 技术领域的可靠合作伙伴"
     },
@@ -13,7 +13,7 @@ const someObj = {
 
 const anotherObj = {
     ".about-text-lang" : {
-        "ru-RU" : "Наша компания поставляет ИТ-оборудование, серверные решения и круглосуточную поддержку для предприятий любого масштаба. Мы предлагаем широкий спектр продуктов и услуг, от поставки компьютеров, серверов, сетевого оборудования и программного обеспечения до развертывания и поддержки ИТ-инфраструктуры.",
+        "ru" : "Наша компания поставляет ИТ-оборудование, серверные решения и круглосуточную поддержку для предприятий любого масштаба. Мы предлагаем широкий спектр продуктов и услуг, от поставки компьютеров, серверов, сетевого оборудования и программного обеспечения до развертывания и поддержки ИТ-инфраструктуры.",
         "en" : `Our company supplies IT equipment, server solutions and 24/7 support for businesses of all sizes. We offer a wide range of products and services, from supplying computers, servers, networking equipment and software to deploying and supporting IT infrastructure.
         <br /><br />
         Why you should utilize our company's services:

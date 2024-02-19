@@ -1,10 +1,10 @@
-const allLangs = ['ru-RU', 'en', 'ch']
+const allLangs = ['ru', 'en', 'ch']
 const select = document.querySelector('select')
 
 // Установка языка по умолчанию. Изначально стоит EN
 // console.log(navigator.language)
-let currentLang = localStorage.getItem('language') || navigator.language || 'en'
-select.value = localStorage.getItem('language') || navigator.language || 'en'
+let currentLang = localStorage.getItem('language') || checkBrowserLang() || 'en'
+select.value = localStorage.getItem('language') || checkBrowserLang() || 'en'
 
 const langButton = document.querySelectorAll("[data-lang]")
 
@@ -43,3 +43,15 @@ select.addEventListener('change', (event) =>{
     changeLanguage()
     location.reload()
 })
+
+function checkBrowserLang() {
+    const navLang = navigator.language.slice(0, 2).toLowerCase()
+    const result = allLangs.some(elem => {
+        return elem === navLang
+    })
+
+    if(result)
+        return navLang
+}
+console.log("lang", navigator.language.slice(0, 2))
+console.log("Check", checkBrowserLang())
