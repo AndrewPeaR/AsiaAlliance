@@ -21,11 +21,11 @@
               <option value="ru">RU</option>
               <option value="ch">CH</option>
             </select>
-            <li class="header__nav-item"><a href="index.html">Home</a></li>
-            <li class="header__nav-item"><a href="about.html">About us</a></li>
-            <li class="header__nav-item"><a href="products.html">Products</a></li>
-            <li class="header__nav-item"><a href="partners.html">Partners</a></li>
-            <li class="header__nav-item"><a href="contacts.html">Contacts</a></li>
+            <li class="header__nav-item"><a href="index.html" class="navhome">Home</a></li>
+            <li class="header__nav-item"><a href="about.html" class="navabout">About us</a></li>
+            <li class="header__nav-item"><a href="products.html" class="navproducts">Products</a></li>
+            <li class="header__nav-item"><a href="partners.html" class="navpartners">Partners</a></li>
+            <li class="header__nav-item"><a href="contacts.html" class="navcontacts">Contacts</a></li>
           </ul>
         </nav>
 
@@ -105,10 +105,10 @@
                 <li class="footer__nav-items_item footer-logo">
                   <a href="index.html">Asia Alliance</a>
                 </li>
-                <li class="footer__nav-items_item"><a href="about.html">About Us</a></li>
-                <li class="footer__nav-items_item"><a href="products.html">Products</a></li>
-                <li class="footer__nav-items_item"><a href="partners.html">Partners</a></li>
-                <li class="footer__nav-items_item"><a href="contacts.html">Contacts</a></li>
+                <li class="footer__nav-items_item"><a href="about.html" class="footeraboutus">About Us</a></li>
+                <li class="footer__nav-items_item"><a href="products.html" class="footerproducts">Products</a></li>
+                <li class="footer__nav-items_item"><a href="partners.html" class="footerpartners">Partners</a></li>
+                <li class="footer__nav-items_item"><a href="contacts.html" class="footercontacts">Contacts</a></li>
               </ul>
             </div>
             <div class="footer__contacts">
@@ -143,10 +143,12 @@
     <script>
       document.querySelector('.burger').addEventListener('click', function(){
         this.classList.toggle('active');
-        document.querySelector('.header__nav-items').classList.toggle('open');
+        document.querySelector('.header__nav-items').classList.toggle('open')
+        // Блокировка скролла при открытом бургер меню
+        document.querySelector('body').classList.toggle('block-scroll')
       })
   </script>
   <script src="js/lang.js"></script>
-  <script src="js/changeLang.js"></script>
+  <script src="js/scripts.js"></script>
   </body>
 </html>

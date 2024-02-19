@@ -19,17 +19,31 @@ function checkPagePathname() {
         return null
     }
     if(currentPathname.includes('/about')){
-        currentTextObject = anotherObj
+        currentTextObject = aboutPage
+        return null
+    }
+    if(currentPathname.includes('/products')){
+        currentTextObject = productsPage
+        return null
+    }
+    if(currentPathname.includes('/partners')){
+        currentTextObject = partnersPage
+        return null
+    }
+    if(currentPathname.includes('/contacts')){
+        currentTextObject = contactsPage
         return null
     }
     // Дефолтное значение - страница index
-    currentTextObject = someObj
+    currentTextObject = indexPage
 }
 checkPagePathname()
 
 // Подгружаются текста с нужным переводом
 function changeLanguage() {
     for (const key in currentTextObject){
+        // Тут нужно быть внимательным
+        // Если квери селектор не находит элемент, то перевод останавливается
         const elem = document.querySelector(key)
         if(elem)
             elem.innerHTML = currentTextObject[key][currentLang]
@@ -49,6 +63,7 @@ select.addEventListener('change', () =>{
     // Перезагрузка, чтобы на мобилках закрывалось при выборе языка
     document.querySelector('.burger').classList.remove('active');
     document.querySelector('.header__nav-items').classList.remove('open')
+    location.reload()
 })
 
 // Проверяется выбранный язык в браузере, чтобы автоматически подкидывать нужный перевод

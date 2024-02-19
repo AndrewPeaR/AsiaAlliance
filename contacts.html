@@ -21,11 +21,11 @@
               <option value="ru">RU</option>
               <option value="ch">CH</option>
             </select>
-            <li class="header__nav-item"><a href="index.html">Home</a></li>
-            <li class="header__nav-item"><a href="about.html">About us</a></li>
-            <li class="header__nav-item"><a href="products.html">Products</a></li>
-            <li class="header__nav-item"><a href="partners.html">Partners</a></li>
-            <li class="header__nav-item"><a href="contacts.html">Contacts</a></li>
+            <li class="header__nav-item"><a href="index.html" class="navhome">Home</a></li>
+            <li class="header__nav-item"><a href="about.html" class="navabout">About us</a></li>
+            <li class="header__nav-item"><a href="products.html" class="navproducts">Products</a></li>
+            <li class="header__nav-item"><a href="partners.html" class="navpartners">Partners</a></li>
+            <li class="header__nav-item"><a href="contacts.html" class="navcontacts">Contacts</a></li>
           </ul>
         </nav>
 
@@ -39,12 +39,12 @@
     <section>
         <div class="wrapper">
             <div class="contacts">
-                <h2 class="section-title">Contacts</h2>
+                <h2 class="section-title contacts-title-lang">Contacts</h2>
                 <div class="contacts__texts">
-                    <p class="contacts__texts-callToAction">If you have any questions, please contact us</p>
-                    <p class="contacts__texts-contact">Email: info@asia-alliance.co</p>
-                    <p class="contacts__texts-contact">Telephone: +86 130 5910 2019</p>
-                    <p class="contacts__texts-callToAction">We look forward to your call and further cooperation!</p>
+                    <p class="contacts__texts-callToAction callour-lang">If you have any questions, please contact us</p>
+                    <p class="contacts__texts-contact emailour-lang">Email: info@asia-alliance.co</p>
+                    <p class="contacts__texts-contact phoneour-lang">Telephone: +86 130 5910 2019</p>
+                    <p class="contacts__texts-callToAction wecall-lang">We look forward to your call and further cooperation!</p>
                 </div>
             </div>
         </div>
@@ -53,10 +53,10 @@
     <section class="address-bg">
         <div class="wrapper">
             <div class="address">
-                <h2 class="section-title">Address</h2>
-                <h4>Company Registration Address</h4>
+                <h2 class="section-title address-lang">Address</h2>
+                <h4 class="company-register-lang">Company Registration Address</h4>
                 <p>Room 201, Building A, No.1Qianwan 1st Road, Qianhai Shenzhen Hong Kong Cooperation Zone, Shenzhen</p>
-                <h4>Company Office Address</h4>
+                <h4 class="company-office-lang">Company Office Address</h4>
                 <p>Room 232, Building 424, Bagualing Factory, Bagualing Industrial Zone, FutianDistrict, Shenzhen</p>
                 <!-- <div class="maps">ТУТ БУДЕТ ПОТОМ КАРТА API</div> -->
             </div>
@@ -72,10 +72,10 @@
                 <li class="footer__nav-items_item footer-logo">
                   <a href="index.html">Asia Alliance</a>
                 </li>
-                <li class="footer__nav-items_item"><a href="about.html">About Us</a></li>
-                <li class="footer__nav-items_item"><a href="products.html">Products</a></li>
-                <li class="footer__nav-items_item"><a href="partners.html">Partners</a></li>
-                <li class="footer__nav-items_item"><a href="contacts.html">Contacts</a></li>
+                <li class="footer__nav-items_item"><a href="about.html" class="footeraboutus">About Us</a></li>
+                <li class="footer__nav-items_item"><a href="products.html" class="footerproducts">Products</a></li>
+                <li class="footer__nav-items_item"><a href="partners.html" class="footerpartners">Partners</a></li>
+                <li class="footer__nav-items_item"><a href="contacts.html" class="footercontacts">Contacts</a></li>
               </ul>
             </div>
             <div class="footer__contacts">
@@ -110,10 +110,12 @@
     <script>
       document.querySelector('.burger').addEventListener('click', function(){
         this.classList.toggle('active');
-        document.querySelector('.header__nav-items').classList.toggle('open');
+        document.querySelector('.header__nav-items').classList.toggle('open')
+        // Блокировка скролла при открытом бургер меню
+        document.querySelector('body').classList.toggle('block-scroll')
       })
   </script>
   <script src="js/lang.js"></script>
-  <script src="js/changeLang.js"></script>
+  <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -592,7 +592,7 @@ legend {
   flex-direction: column;
   justify-content: space-between;
   width: 327px;
-  height: 590px;
+  height: 670px;
   padding: 30px 35px;
   background-color: #fff;
   border-radius: 5px;
@@ -724,6 +724,9 @@ legend {
 .address {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.address h2 {
+  margin-bottom: 30px;
 }
 .address h4 {
   font-size: 32px;
@@ -865,16 +868,16 @@ legend {
   font-family: "Open Sans", sans-serif;
   font-size: 32px;
   font-weight: 900;
-  line-height: 65px;
+  margin-bottom: 20px;
+}
+.contacts__texts-callToAction:last-child {
+  margin-top: 20px;
 }
 .contacts__texts-contact {
   color: #737373;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
-}
-.contacts__texts-contact:last-child {
-  margin-bottom: 50px;
 }
 @media (max-width: 1100px) {
   .contacts {
